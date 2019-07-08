@@ -1,0 +1,12 @@
+https://remotemysql.com/databases.php
+https://remotemysql.com/phpmyadmin/index.php?db=Rgpi7ESSmM
+
+Username: Rgpi7ESSmM
+
+Database name: Rgpi7ESSmM
+
+Password: mAqyxMUQZa
+
+Server: remotemysql.com
+
+Port: 3306

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-07-2019 a las 03:15:00
+-- Tiempo de generación: 08-07-2019 a las 18:50:35
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -34,6 +34,18 @@ CREATE TABLE `categorias` (
   `descripcion` varchar(300) NOT NULL,
   `url_img` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`id_categoria`, `nombre`, `descripcion`, `url_img`) VALUES
+('cat1', 'Norte ', 'En esta categoria podras encontrar paquetes que visitan parte del continente Americano en la región Norte', 'https://i.ibb.co/QYH451m/Norte-America.jpg'),
+('cat2', 'Sudamérica', 'En esta categoria podras encontrar paquetes que visitan parte del continente Americano en la región Sur', 'https://i.ibb.co/rsHwWHH/Sudamerica.jpg'),
+('cat3', 'Europa', 'En esta categoria podras encontrar paquetes que visitan parte del continente Europeo', 'https://i.ibb.co/1QcF2XX/Europeo.png'),
+('cat4', 'Africa', 'En esta categoria podras encontrar paquetes que visitan parte del continente Africano', 'https://i.ibb.co/4MCrxzk/Africa.jpg'),
+('cat5', 'Asia', 'En esta categoria podras encontrar paquetes que visitan parte del continente Asiático', 'https://i.ibb.co/FBHcWjm/Asia.png'),
+('cat6', 'Oseanía', 'En esta categoria podras encontrar paquetes que visitan parte del continente de Oseanía', 'https://i.ibb.co/VMr5bTX/Oceania.gif');
 
 -- --------------------------------------------------------
 

@@ -10,7 +10,7 @@ $row=mysqli_fetch_array($categoria);
     if(is_null($row)){
         $_SESSION['mensaje']='No existen registros de categorias';
 }else{
-	
+		$_SESSION['mensaje']='Mostrando categorias selecciona una para ver paquetes';
 }
 
 
