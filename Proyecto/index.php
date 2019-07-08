@@ -1,3 +1,5 @@
+<?php include('Codigo.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +16,8 @@
 </center>
 
 <nav>
-	<a href="#"></a>
-	<a href="#">categoria</a>
+	<a href="#"><?php $categoria ?></a>
+	<a href="#">categoria2</a>
 	<a href="#">categoria</a>
 	<a href="#">categoria</a>
 	<a href="#">categoria</a>
