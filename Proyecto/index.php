@@ -15,14 +15,6 @@
 	</table>
 </center>
 
-<nav>
-	<a href="#">categoria</a>
-	<a href="#">categoria</a>
-	<a href="#">categoria</a>
-	<a href="#">categoria</a>
-	<a href="#">categoria</a>
-	<div class="animation start-home"></div>
-</nav>
 <div><?php $categoria ?></div>
 <div class="mensaje">
     <?php
@@ -40,20 +32,13 @@
     }else{
         ?>
     <table>
-    <thead>
-        <tr>
-        <th>Nombre</th>
-            <th>Descripcion categoria</th>
-        </tr>
-        </thead>
-        <?php $results=mysqli_query($db,"SELECT*FROM categorias");
-        while($row = mysqli_fetch_array($results)){?>
-        <tr>
-        <td><?php echo $row['nombre']; ?></td>
-        <td><?php echo $row['descripcion']; ?></td>
-            
-        </tr>
-      <?php } }?>
+    	<nav>
+        	<?php $results=mysqli_query($db,"SELECT * FROM categorias");
+        	while($row = mysqli_fetch_array($results)){
+        		echo '<a href="" value="'.$row['id_categoria'].'">'.$row['nombre'].'</a>';
+        	?>
+      		<?php } }?>
+		</nav>
     </table>
 
 </body>
