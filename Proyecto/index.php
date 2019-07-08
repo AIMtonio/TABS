@@ -41,5 +41,90 @@
 		</nav>
     </table>
 
+    <br>
+    <br>
+    <center><table border="2" width="700">
+    	<tr>	
+    		<td>
+    			<center><img src="https://i.ibb.co/QYH451m/Norte-America.jpg" width="300" height="300" ></center>
+    		</td>
+    		<td><center>
+    			<?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat1'");
+        			while($row = mysqli_fetch_array($results)){
+        				echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
+        				echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+        		?>
+      			<?php  }?></center>
+    		</td>
+    	</tr>
+    	<tr>	
+    		<td style="width:450px;">
+    			<center><img src="https://i.ibb.co/rsHwWHH/Sudamerica.jpg" width="300" height="300" ></center>
+    		</td>
+    		<td  style="width:350px;"><center>
+    			<?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat2'");
+        			while($row = mysqli_fetch_array($results)){
+        				echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
+        				echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+        		?>
+      			<?php  }?></center>
+    		</td>
+    	</tr>
+    	<tr>	
+    		<td style="width:450px;">
+    			<center><img src="https://i.ibb.co/1QcF2XX/Europeo.png" width="300" height="300" ></center>
+    		</td>
+    		<td  style="width:350px;"><center>
+    			<?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat3'");
+        			while($row = mysqli_fetch_array($results)){
+        				echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
+        				echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+        		?>
+      			<?php  }?></center>
+    		</td>
+    	</tr>
+    	<tr>	
+    		<td style="width:450px;">
+    			<center><img src="https://i.ibb.co/4MCrxzk/Africa.jpg" width="300" height="300" ></center>
+    		</td>
+    		<td  style="width:350px;"><center>
+    			<?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat4'");
+        			while($row = mysqli_fetch_array($results)){
+        				echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
+        				echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+        		?>
+      			<?php  }?></center>
+    		</td>
+    	</tr>
+    	<tr>	
+    		<td style="width:450px;">
+    			<center><img src="https://i.ibb.co/FBHcWjm/Asia.png" width="300" height="300" ></center>
+    		</td>
+    		<td  style="width:350px;"><center>
+    			<?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat5'");
+        			while($row = mysqli_fetch_array($results)){
+        				echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
+        				echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+        		?>
+      			<?php  }?></center>
+    		</td>
+    	</tr>
+    	<tr>	
+    		<td style="width:450px;">
+    			<center><img src="https://i.ibb.co/VMr5bTX/Oceania.gif" width="300" height="300" ></center>
+    		</td>
+    		<td  style="width:350px;"><center>
+    			<?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat6'");
+        			while($row = mysqli_fetch_array($results)){
+        				echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
+        				echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+        		?>
+      			<?php  }?></center>
+    		</td>
+    	</tr>
+    </table>
+</center>
+
+
 </body>
 </html>
