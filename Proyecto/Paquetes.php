@@ -18,7 +18,7 @@
 <!--aqui inicia la pagina-->
 <br>
     <center>
-<img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%">
+<a href="Index.php"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
 </center>
 
 <div><?php $categoria ?></div>
@@ -48,9 +48,15 @@
     <!-- TABLA DE CATEGORIAS-->
     <!--CIERRA TABLA CATEGORIAS-->
 </center>
-
+<?php $categoria=$_GET['cat']; ?>
 <!-- TABLA DE PAQUETES -->
-<br><table border="1">
+<?php if($categoria==null){
+    echo "No existen paquetes de esta categoria";
+}else{
+    echo "Estos son los paquetes de esta categoria
+    ";
+} ?>
+<br><br><center><table border="1">
     <tr>
     <td>Código</td>
     <td>Nombre</td>
@@ -59,13 +65,29 @@
     <td>Costo</td>
     </tr>
     <tr>
-    <td>hola</td>
-    <td>hola</td>
-    <td>hola</td>
-    <td>hola</td>
-    <td>hola</td>
+    <td><?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria'");
+                    while($row = mysqli_fetch_array($results)){
+                    echo '<font size="3">'.$row['id_categoria'].'<br></font> <br>';?><?php  }?></td>
+    <td><?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria'");
+                    while($row = mysqli_fetch_array($results)){
+                    echo '<font size="3">'.$row['nombre_paquete'].'<br></font> <br>';?><?php  }?></td>
+    <td><?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria'");
+                    while($row = mysqli_fetch_array($results)){
+                    echo '<font size="3">'.$row['no_dias'].'<br></font> <br>';?><?php  }?></td>
+    <td><?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria'");
+                    while($row = mysqli_fetch_array($results)){
+                    echo '<font size="3">'.$row['destino'].'<br></font> <br>';?><?php  }?></td>
+    <td><?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria'");
+                    while($row = mysqli_fetch_array($results)){
+                    echo '<font size="3">'.$row['costo'].'<br></font> <br>';?><?php  }?></td>
+    <td><?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria'");
+                    while($row = mysqli_fetch_array($results)){
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..</a></font>';?><?php  }?>
+                         
+
+                     </td>
     </tr>
-</table>
+</table></center>
 <!-- TABLA DE PAQUETES -->
 
 
