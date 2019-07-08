@@ -2,17 +2,15 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
 	<title>Travel Agency blue sky</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<br>
 	<center>
-	<table border="1">
-		<td><img src="Imagenes/Logo.png" width="90%" height="90%"></td>
-		<td>No se recuerdan los días, se recuerdan los momentos. Vuela a la vida.</td>
-	</table>
+<img src="Imagenes/LOGOconSLOGAR.png" width="40%" height="40%">
 </center>
 
 <div><?php $categoria ?></div>
@@ -38,6 +36,8 @@
         		echo '<a href="" value="'.$row['id_categoria'].'">'.$row['nombre'].'</a>';
         	?>
       		<?php } }?>
+                <div class="animation start-home"></div>
+               
 		</nav>
     </table>
 
