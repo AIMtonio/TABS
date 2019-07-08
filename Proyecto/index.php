@@ -64,7 +64,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat1'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
@@ -77,7 +77,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat2'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
@@ -90,7 +90,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat3'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
@@ -103,7 +103,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat4'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
@@ -116,7 +116,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat5'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
@@ -129,7 +129,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat6'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
