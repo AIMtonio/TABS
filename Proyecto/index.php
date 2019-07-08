@@ -139,22 +139,6 @@
 </center>
 
 <!-- TABLA DE PAQUETES -->
-<br><table border="1">
-    <tr>
-    <td>Código</td>
-    <td>Nombre</td>
-    <td>Días</td>
-    <td>Visitando</td>
-    <td>Costo</td>
-    </tr>
-    <tr>
-    <td>hola</td>
-    <td>hola</td>
-    <td>hola</td>
-    <td>hola</td>
-    <td>hola</td>
-    </tr>
-</table>
 <!-- TABLA DE PAQUETES -->
 
 
@@ -165,7 +149,7 @@
     </div>
   </div>
 <!--CAJA CONTENEDORA-->
-<input type="button" onclick="eliminar()" value="Eliminar Contenido" /> 
+<!--<input type="button" onclick="eliminar()" value="Eliminar Contenido" /> -->
 
 
 </body>
