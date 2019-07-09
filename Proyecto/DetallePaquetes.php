@@ -115,7 +115,11 @@
         </td>
     </tr>
     <tr>
-        <td colspan="3"><font size="3"><b>Intinerario:</b></font></td>
+        <td colspan="3"><font size="3"><b>Intinerario:</b></font>
+        <?php $results=mysqli_query($db,"SELECT * from detalle_paquete where id_paquete='$idpaq'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<font size="3"><a href="'.$row['Nom_pdf'].'.pdf">Ver Intinerario</a></font>';?><?php  }?>
+        </td>
     </tr>
 </table></center>
 
