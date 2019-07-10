@@ -4,7 +4,7 @@ header("Content-Type: text/html;charset=utf-8");
 $db=mysqli_connect('localhost','root','','agencia');
 $categoria=0;
 
-$categoria=mysqli_query($db,"SELECT * FROM categorias WHERE id_categoria='cat1'");
+$categoria=mysqli_query($db,"SELECT * FROM categorias");
 //$_SESSION['mensaje']=$validarAlerta;
 $row=mysqli_fetch_array($categoria);
     if(is_null($row)){
