@@ -4,7 +4,8 @@
 <head> 
     <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
 	<title>Travel Agency blue sky</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
@@ -18,7 +19,7 @@
 <!--aqui inicia la pagina-->
 <br>
     <center>
-<img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%">
+<a href="Index.php"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
 </center>
 
 <div><?php $categoria ?></div>
@@ -46,13 +47,6 @@
 </div>
     <br>
     <!-- TABLA DE CATEGORIAS-->
-    <script type="text/javascript">
-        function eliminar() {
-        document.getElementById('tablaCategorias').innerHTML='';
-        document.getElementById('mensaje').innerHTML='';
-
-}
-    </script>
     <center>
         <div class="tablaCategorias" id="tablaCategorias">
         <table border="2" width="700">
@@ -64,8 +58,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat1'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
-                ?>
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'" class="boton">Ver mas detalles...</a></font>';?>
                 <?php  }?></center>
             </td>
         </tr>
@@ -77,8 +70,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat2'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
-                ?>
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'" class="boton">Ver mas detalles...</a></font>';?>
                 <?php  }?></center>
             </td>
         </tr>
@@ -90,8 +82,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat3'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
-                ?>
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'" class="boton">Ver mas detalles...</a></font>';?>
                 <?php  }?></center>
             </td>
         </tr>
@@ -103,7 +94,8 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat4'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'" class="boton">
+                        Ver mas detalles...</a></font>';
                 ?>
                 <?php  }?></center>
             </td>
@@ -116,8 +108,7 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat5'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
-                ?>
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'" class="boton">Ver mas detalles...</a></font>';?>
                 <?php  }?></center>
             </td>
         </tr>
@@ -129,19 +120,14 @@
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat6'");
                     while($row = mysqli_fetch_array($results)){
                         echo '<font size="3">'.$row['descripcion'].'<br></font> <br>';
-                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'">Ver mas detalles..</a></font>';
-                ?>
+                        echo '<font size="3"><a href="Paquetes.php?cat='.$row['id_categoria'].'" class="boton">Ver mas detalles...</a></font>';?>
                 <?php  }?></center>
             </td>
         </tr>
     </table>
 </div><!--CIERRA TABLA CATEGORIAS-->
 </center>
-
-<!-- TABLA DE PAQUETES -->
-<!-- TABLA DE PAQUETES -->
-
-
+<!--<input type="button" onclick="eliminar()" class="boton" value="Eliminar Contenido" />-->
     <!--Aqui acaba la pagina y se cierra el cuadro-->
 <!--CAJA CONTENEDORA-->
         </fieldset>
@@ -149,8 +135,5 @@
     </div>
   </div>
 <!--CAJA CONTENEDORA-->
-<!--<input type="button" onclick="eliminar()" value="Eliminar Contenido" /> -->
-
-
 </body>
 </html>

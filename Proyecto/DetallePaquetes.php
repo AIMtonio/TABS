@@ -4,7 +4,8 @@
 <head> 
     <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
 	<title>Travel Agency blue sky</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
@@ -118,7 +119,7 @@
         <td colspan="3"><font size="3"><b>Intinerario:</b></font>
         <?php $results=mysqli_query($db,"SELECT * from detalle_paquete where id_paquete='$idpaq'");
                     while($row = mysqli_fetch_array($results)){
-                        echo '<font size="3"><a href="'.$row['Nom_pdf'].'.pdf">Ver Intinerario</a></font>';?><?php  }?>
+                        echo '<font size="3"><a href="/SitiosWeb/PruebaProyecto/Archivos/Itinerarios/'.$row['Nom_pdf'].'.pdf">Ver Intinerario</a></font>';?><?php  }?>
         </td>
     </tr>
 </table></center>

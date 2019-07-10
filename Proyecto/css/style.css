@@ -112,6 +112,25 @@ span {
     color: #2BD6B4;
 }
 
+.boton{
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #3498db;
+    color: white;
+    border-radius: 3px;
+}
+
+.mensaje{
+    width: 50%;
+    font: bold;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3498db;
+    background: #A3D9FD;
+    border: 1px solid #3c863d;
+}
 
 
 /*NUEVO ESTILO*/
@@ -310,3 +329,23 @@ fieldset{
 .form-wrapper input[type="radio"]:checked + label h4{
   color: #3498db;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
