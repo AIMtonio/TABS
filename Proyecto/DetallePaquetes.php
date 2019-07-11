@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
+<audio autoplay src="Sonidos/Detalles.mp3"></audio>
 <!--CAJA CONTENEDORA-->
 <div class="container">
     <div class="wrapper">
@@ -19,7 +19,7 @@
 <!--aqui inicia la pagina-->
 <br>
     <center>
-<a href="Index.php"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
+<a href="https://luminary-ceremony.000webhostapp.com/"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
 </center>
 
 <div><?php $categoria ?></div>
@@ -57,7 +57,16 @@
     echo $idpaq;
 } ?>
 <!-- TABLA DE PAQUETES -->
-<center><table border="2" width="500">
+<center><table border="2" width="700">
+    <tr>
+        <td rowspan="9" width="300" height="300">
+            <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from paquetes where id_paquete='$idpaq'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
+        </td>
+    </tr>
     <tr>
         <td colspan="3">
             <center>
@@ -119,7 +128,7 @@
         <td colspan="3"><font size="3"><b>Intinerario:</b></font>
         <?php $results=mysqli_query($db,"SELECT * from detalle_paquete where id_paquete='$idpaq'");
                     while($row = mysqli_fetch_array($results)){
-                        echo '<font size="3"><a href="/SitiosWeb/PruebaProyecto/Archivos/Itinerarios/'.$row['Nom_pdf'].'.pdf">Ver Intinerario</a></font>';?><?php  }?>
+                        echo '<font size="3"><a href="/Archivos/Itinerarios/'.$row['Nom_pdf'].'.pdf">Ver Intinerario</a></font>';?><?php  }?>
         </td>
     </tr>
 </table></center>

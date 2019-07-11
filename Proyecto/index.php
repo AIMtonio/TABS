@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
+<audio autoplay src="Sonidos/Bienvenida.mp3"></audio>
 <!--CAJA CONTENEDORA-->
 <div class="container">
     <div class="wrapper">
@@ -19,7 +19,7 @@
 <!--aqui inicia la pagina-->
 <br>
     <center>
-<a href="Index.php"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
+<a href="https://luminary-ceremony.000webhostapp.com/"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
 </center>
 
 <div><?php $categoria ?></div>
@@ -52,7 +52,11 @@
         <table border="2" width="700">
         <tr>    
             <td>
-                <center><img src="https://i.ibb.co/QYH451m/Norte-America.jpg" width="300" height="300" ></center>
+               <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from categorias where id_categoria='cat1'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
             </td>
             <td><center>
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat1'");
@@ -64,7 +68,11 @@
         </tr>
         <tr>    
             <td style="width:450px;">
-                <center><img src="https://i.ibb.co/rsHwWHH/Sudamerica.jpg" width="300" height="300" ></center>
+               <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from categorias where id_categoria='cat2'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
             </td>
             <td  style="width:350px;"><center>
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat2'");
@@ -76,7 +84,11 @@
         </tr>
         <tr>    
             <td style="width:450px;">
-                <center><img src="https://i.ibb.co/1QcF2XX/Europeo.png" width="300" height="300" ></center>
+                <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from categorias where id_categoria='cat3'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
             </td>
             <td  style="width:350px;"><center>
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat3'");
@@ -88,7 +100,11 @@
         </tr>
         <tr>    
             <td style="width:450px;">
-                <center><img src="https://i.ibb.co/4MCrxzk/Africa.jpg" width="300" height="300" ></center>
+               <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from categorias where id_categoria='cat4'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
             </td>
             <td  style="width:350px;"><center>
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat4'");
@@ -102,7 +118,11 @@
         </tr>
         <tr>    
             <td style="width:450px;">
-                <center><img src="https://i.ibb.co/FBHcWjm/Asia.png" width="300" height="300" ></center>
+                <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from categorias where id_categoria='cat5'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
             </td>
             <td  style="width:350px;"><center>
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat5'");
@@ -114,7 +134,11 @@
         </tr>
         <tr>    
             <td style="width:450px;">
-                <center><img src="https://i.ibb.co/VMr5bTX/Oceania.gif" width="300" height="300" ></center>
+              <center>
+              <?php $results=mysqli_query($db,"SELECT url_img from categorias where id_categoria='cat6'");
+                    while($row = mysqli_fetch_array($results)){
+                        echo '<img src='.$row['url_img'].' width="300" height="300">';?><?php  }?>  
+            </center>
             </td>
             <td  style="width:350px;"><center>
                 <?php $results=mysqli_query($db,"SELECT * FROM categorias where id_categoria='cat6'");
@@ -130,6 +154,12 @@
 <!--<input type="button" onclick="eliminar()" class="boton" value="Eliminar Contenido" />-->
     <!--Aqui acaba la pagina y se cierra el cuadro-->
 <!--CAJA CONTENEDORA-->
+<br><br>
+<footer>
+    <div class="mensaje">
+    <a href="Creditos.php">Creditos</a>
+    </div>
+</footer>
         </fieldset>
       </form>
     </div>

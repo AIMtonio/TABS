@@ -132,6 +132,18 @@ span {
     border: 1px solid #3c863d;
 }
 
+.mensaje2{
+    width: 50%;
+    font: bold;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3498db;
+    background: #FFCE33;
+    border: 1px solid #3c863d;
+}
+
 
 /*NUEVO ESTILO*/
 /*NUEVO ESTILO*/

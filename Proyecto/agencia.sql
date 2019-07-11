@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-07-2019 a las 18:50:35
+-- Tiempo de generación: 11-07-2019 a las 22:34:47
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.6
 
@@ -31,21 +31,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `categorias` (
   `id_categoria` varchar(20) NOT NULL,
   `nombre` varchar(200) NOT NULL,
-  `descripcion` varchar(300) NOT NULL,
-  `url_img` varchar(200) DEFAULT NULL
+  `descripcion` longtext NOT NULL,
+  `url_img` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `categorias`
---
-
-INSERT INTO `categorias` (`id_categoria`, `nombre`, `descripcion`, `url_img`) VALUES
-('cat1', 'Norte ', 'En esta categoria podras encontrar paquetes que visitan parte del continente Americano en la región Norte', 'https://i.ibb.co/QYH451m/Norte-America.jpg'),
-('cat2', 'Sudamérica', 'En esta categoria podras encontrar paquetes que visitan parte del continente Americano en la región Sur', 'https://i.ibb.co/rsHwWHH/Sudamerica.jpg'),
-('cat3', 'Europa', 'En esta categoria podras encontrar paquetes que visitan parte del continente Europeo', 'https://i.ibb.co/1QcF2XX/Europeo.png'),
-('cat4', 'Africa', 'En esta categoria podras encontrar paquetes que visitan parte del continente Africano', 'https://i.ibb.co/4MCrxzk/Africa.jpg'),
-('cat5', 'Asia', 'En esta categoria podras encontrar paquetes que visitan parte del continente Asiático', 'https://i.ibb.co/FBHcWjm/Asia.png'),
-('cat6', 'Oseanía', 'En esta categoria podras encontrar paquetes que visitan parte del continente de Oseanía', 'https://i.ibb.co/VMr5bTX/Oceania.gif');
 
 -- --------------------------------------------------------
 
@@ -59,6 +47,7 @@ CREATE TABLE `detalle_paquete` (
   `destinos` varchar(200) NOT NULL,
   `paq_incluye` varchar(2000) NOT NULL,
   `paq_no_incluye` varchar(2000) NOT NULL,
+  `Nom_pdf` varchar(50) NOT NULL,
   `id_paquete` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -74,7 +63,7 @@ CREATE TABLE `paquetes` (
   `no_dias` int(3) DEFAULT NULL,
   `destino` varchar(200) NOT NULL,
   `costo` double(9,2) DEFAULT NULL,
-  `url_img` varchar(200) DEFAULT NULL,
+  `url_img` text DEFAULT NULL,
   `id_categoria` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

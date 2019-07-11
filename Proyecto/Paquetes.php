@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
+<audio autoplay src="Sonidos/Paquetes.mp3"></audio>
 <!--CAJA CONTENEDORA-->
 <div class="container">
     <div class="wrapper">
@@ -19,7 +19,7 @@
 <!--aqui inicia la pagina-->
 <br>
     <center>
-<a href="Index.php"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
+<a href="https://luminary-ceremony.000webhostapp.com/"><img src="Imagenes/Logos/LogoLong.png"  width="60%" height="60%"></a>
 </center>
 
 <div><?php $categoria ?></div>
@@ -44,18 +44,14 @@
     <?php
     $mensaje=$_SESSION['mensaje']; 
         echo $mensaje; ?></div>
-    <br><br>
-    <div class="mensaje2" id="mensaje2"></div>
     <!-- TABLA DE CATEGORIAS-->
 </center>
 <?php $categoria=$_GET['cat']; ?>
 <!-- TABLA DE PAQUETES -->
 <?php if($categoria==null){
-    echo "No existen paquetes de esta categoria";
-}else{
-    echo "Estos son los paquetes de esta categoria
-    ";
-} ?>
+    ?> <div class="mensaje">No existen paquetes de esta categoria</div><?php 
+}else{ ?>
+    <div></div> <?php } ?>
 
                                              <!-- CATEGORIA 1-->
                                              <!-- CATEGORIA 1-->
@@ -102,18 +98,18 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq1' AND 'paq5'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>
             </div>
           </div>
       </div>
-    </div>
+    
 <!-- TABLA 1 CATEGORIA 1 BIEN -->
 <div class="limiter">
     <div class="container-table100" id="Tabla2" style="display:none;">
@@ -156,13 +152,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq6' AND 'paq_10'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -211,13 +207,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_11' AND 'paq_13'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -270,13 +266,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_14' AND 'paq_18'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -324,13 +320,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_19' AND 'paq_23'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -378,13 +374,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_24' AND 'paq_26'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -440,13 +436,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_27' AND 'paq_31'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -496,13 +492,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_32' AND 'paq_36'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -552,13 +548,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_37' AND 'paq_39'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -611,13 +607,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_40' AND 'paq_44'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -668,13 +664,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_45' AND 'paq_49'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -724,13 +720,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_50' AND 'paq_52'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -783,13 +779,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_53' AND 'paq_57'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -837,13 +833,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_58' AND 'paq_62'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -891,13 +887,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_63' AND 'paq_65'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -950,13 +946,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_66' AND 'paq_70'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -1004,13 +1000,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_71' AND 'paq_75'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
@@ -1058,13 +1054,13 @@
               <div class="cell">
               <?php $results=mysqli_query($db,"SELECT * FROM paquetes where id_categoria='$categoria' and id_paquete BETWEEN 'paq_76' AND 'paq_78'");
                     while($row = mysqli_fetch_array($results)){
-                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'">Ver mas detalles..<br><br></a></font>';?><?php  }?>
+                     echo '<font size="3"><a href="DetallePaquetes.php?idpaq='.$row['id_paquete'].'" class="boton">Ver mas detalles..<br><br></a></font>';?><?php  }?>
               </div>
             </div>  
             <td colspan="6">
-                <center><input type="button" onclick="ocultar1()" value="1">
-                        <input type="button" onclick="ocultar2()" value="2">
-                        <input type="button" onclick="ocultar3()" value="3">
+                <center><input type="button" onclick="ocultar1()" value="1" class="boton">
+                        <input type="button" onclick="ocultar2()" value="2" class="boton">
+                        <input type="button" onclick="ocultar3()" value="3" class="boton">
             </td>          
             </div>
           </div>
