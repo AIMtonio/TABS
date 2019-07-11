@@ -54,7 +54,7 @@
 <?php if($categoria==null){
     echo "No existen paquetes de esta categoria";
 }else{
-    echo $idpaq;
+    
 } ?>
 <!-- TABLA DE PAQUETES -->
 <center><table border="2" width="700">
