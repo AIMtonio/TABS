@@ -34,7 +34,7 @@
         <nav>
             <?php $results=mysqli_query($db,"SELECT * FROM categorias");
             while($row = mysqli_fetch_array($results)){
-                echo '<a href="" value="'.$row['id_categoria'].'">'.$row['nombre'].'</a>';
+                echo '<a href="Paquetes.php?cat='.$row['id_categoria'].'" value="'.$row['id_categoria'].'">'.$row['nombre'].'</a>';
             ?>
             <?php } }?>
                 <div class="animation start-home"></div> 
