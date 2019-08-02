@@ -1,0 +1,72 @@
+
+								<!-- Registros paquetes Africa -->
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_40', 'Paquete 40', '7', 'Cairo', '36,869', 'https://www.aviontourism.com/images/1920-900-fix/3878a0c8-3240-4e9d-91f7-67d6d5b7e5fc', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_41', 'Paquete 41', '5', 'Lúxor', '45,644', 'https://cdn.civitatis.com/egipto/luxor/visita-guiada-templos-luxor-karnak-grid.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_42', 'Paquete 42', '5', 'Ciudad del Cabo', '37,439‬', 'https://www.growproexperience.com/wp-content/uploads/2018/04/Que-ver-en-Ciudad-del-Cabo-5.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_43', 'Paquete 43', '5', 'Masái Mara', '94,421‬', 'http://img.viajescondestino.com/wp-content/uploads/2009/12/reserva-masai-mara.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_44', 'Paquete 44', '5', 'Seychelles', '72,491‬', 'https://www.costacruceros.es/content/dam/costa/inventory-assets/countries/SYC/SYC.jpg.image.750.563.low.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_45', 'Paquete 45', '5', 'Safari', '69,596‬', 'https://www.earthlifeexpeditions.com/wp-content/uploads/2018/08/balloon-safari-Giraffe-casting-shadow-of-balloon.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_46', 'Paquete 46', '5', 'Mauricio', '58,974', 'https://www.elsoldepuebla.com.mx/circulos/turismo/tcnjx6-53931_7.jpg/alternates/LANDSCAPE_768/53931_7.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_47', 'Paquete 47', '5', 'Tenerife', '44,706', 'https://www.holaislascanarias.com/sites/default/files/tenerife.jpg', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_48', 'Paquete 48', '5', 'Tánger', '35,308', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Muralla%2C_T%C3%A1nger%2C_Marruecos%2C_2015-12-11%2C_DD_54.JPG/128px-Muralla%2C_T%C3%A1nger%2C_Marruecos%2C_2015-12-11%2C_DD_54.JPG', 'cat4');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_49', 'Paquete 49', '5', 'Unguja', '48,035', 'https://q-ec.bstatic.com/images/hotel/max1024x768/202/20221590.jpg', 'cat4');
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_50', 'Paquete 50', '5', 'Hurguda', '44,662', 'https://www.exotiqtours.com/images/international/uae/hurguda.jpg', 'cat4');
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_51', 'Paquete 51', '5', 'Madagascar', '60,802', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/All%C3%A9e_des_Baobabs_near_Morondava%2C_Madagascar.jpg/240px-All%C3%A9e_des_Baobabs_near_Morondava%2C_Madagascar.jpg', 'cat4');
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_52', 'Paquete 52', '5', 'Guiza', '38,702', 'https://www.memphistours.co.uk/Egypt-Guide/photo/Giza,-Sphinx-and-the-Pyramids.jpg', 'cat4');
+
+
+								<!-- Registros paquetes Europa -->
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_27', 'Paquete 27', '5', 'Guiza', '38,702', 'https://www.memphistours.co.uk/Egypt-Guide/photo/Giza,-Sphinx-and-the-Pyramids.jpg', 'cat3');
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_28', 'Paquete 28', '5', 'Roma', '16,691', 'https://www.viajeselcorteingles.es/imagen/pt/mic/roma/home/img_mic_roma_home_1600x840_01.jpg', 'cat3');	
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_29', 'Paquete 29', '5', 'Venecia', '17,322', 'https://okdiario.com/img/viajes/2016/11/10/venecia-la-mejor-zona-para-alojarse-en-venecia.jpg', 'cat3');	
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_30', 'Paquete 30', '5', 'Londres', '10,722', 'https://cdn.civitatis.com/reino-unido/londres/guia/distritos.jpg', 'cat3');	
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_31', 'Paquete 31', '5', 'Barcelona', '14,059', 'https://avisassets.abgemea.com/.imaging/flexibleIntroLarge/dam/DMS/global/hg2-images/intros/barcelona/Barcelona_at_golden_hour_Credit_iStock_Eloi_Omella.jpg.jpg', 'cat3');	
+
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_32', 'Paquete 32', '5', 'Florencia', '16,609', 'https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/11/20/Recortada/img_mbigas_20171120-105147_imagenes_lv_terceros_florencia-kYBD-U433036905600NrG-992x558@LaVanguardia-Web.jpg', 'cat3');	
+
+INSERT INTO `paquetes` (`id_paquete`, `nombre_paquete`, `no_dias`, `destino`, `costo`, `url_img`, `id_categoria`) 
+VALUES ('paq_33', 'Paquete 33', '5', 'Praga', '16,733', 'https://cdn1.guias-viajar.com/chequia/wp-content/uploads/2018/03/Puente-Carlos-FB-003-2-600x332.jpg', 'cat3');
